@@ -19,13 +19,16 @@ public class proj_20190407 {
 			System.out.print("사람"+(i+1)+"대기 시간 : ");
 			arrP[i] = scan.nextInt();			
 		}
+		
 		Arrays.sort(arrP);
 		
 		int totalTime = arrP[0];
+		
 		for(int i = 1;i<arrP.length;i++){
 			arrP[i] = arrP[i-1] + arrP[i];
 			totalTime += arrP[i] ;
 		}
+		
 		System.out.println("총 대기시간 : "+totalTime+"분");
 	}
 }

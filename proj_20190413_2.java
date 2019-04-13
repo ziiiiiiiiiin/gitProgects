@@ -23,7 +23,7 @@ public class proj_20190413_2 {
 		
 		Arrays.sort(arrN);
 		
-		System.out.println(arrN[1]);
+		System.out.println("두번째로 큰 정수 : "+ arrN[1]);
 	}
 
 }
